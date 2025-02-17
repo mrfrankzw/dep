@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SubZero Deployer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SubZero Bot Deployer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1><i class="fa fa-rocket"></i> SubZero Deployer</h1>
-        <div class="form-container">
-            <input type="text" id="repoUrl" placeholder="Git Repository URL" />
-            <input type="text" id="sessionId" placeholder="SESSION_ID" />
-            <input type="text" id="prefix" placeholder="PREFIX" />
-            <button id="deployBtn">Deploy</button>
-        </div>
-        <div class="logs-container">
-            <h2>Deployment Logs</h2>
-            <ul id="logs"></ul>
-        </div>
-    </div>
-    <script src="script.js"></script>
+  <div class="container">
+    <h1>SubZero Bot Deployer</h1>
+    <form id="deployForm">
+      <label for="sessionId">SESSION_ID</label>
+      <input type="text" id="sessionId" name="sessionId" required>
+      
+      <label for="prefix">PREFIX</label>
+      <input type="text" id="prefix" name="prefix" required>
+      
+      <button type="submit">Deploy</button>
+    </form>
+    <div id="logs"></div>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
